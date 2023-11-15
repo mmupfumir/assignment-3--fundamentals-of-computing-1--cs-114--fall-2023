@@ -11,5 +11,7 @@ public class RunMatrix {
 
     System.out.println("Default matrix:");
     matrix.populateMatrix();
+
+    scanner.close();
   }
 }

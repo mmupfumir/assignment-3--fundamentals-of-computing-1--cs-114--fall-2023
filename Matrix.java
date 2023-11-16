@@ -23,9 +23,9 @@ public class Matrix {
     }
 
     public void flipMatrix() {
-        for (int i = 0; i < size / 2; i++) {
-            for (int j = 0; j < size; j++) {
-                swap(i, j, size - 1 - i, j);
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size 1- i; j++) {
+                swap(i, j, size - 1 - j, size - 1 - i);
             }
         }
     }

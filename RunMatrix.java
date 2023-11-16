@@ -9,17 +9,17 @@ public class RunMatrix {
 
     Matrix matrix = new Matrix(size);
 
-    System.out.println("Your matrix is" + size + "x" + size);
+    System.out.println("Your matrix is " + size + "x" + size);
     System.out.println("Printing matrix with default values:");
     matrix.resetMatrix();
     matrix.printMatrix();
 
-    System.out.println("Popultaing matrix...matrix populated");
+    System.out.println("Popultaing matrix...matrix populated\n");
     System.out.println("Printing matrix:");
     matrix.populateMatrix();
     matrix.printMatrix();
 
-    System.out.println("Flipping matrix...matrix flipped");
+    System.out.println("Flipping matrix...matrix flipped\n");
     System.out.println("Printing flipped matrix: ");
     matrix.flipMatrix();
     matrix.printMatrix();

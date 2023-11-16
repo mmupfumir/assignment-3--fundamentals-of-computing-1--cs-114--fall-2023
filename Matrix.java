@@ -6,6 +6,7 @@ public class Matrix {
         this.size = size;
         this.matrix = new int[size][size];
     }
+    // prints matrix with all 0s
     public void resetMatrix() {
       for (int i = 0; i < size; i++) {
           for (int j = 0; j < size; j++) {
@@ -13,7 +14,7 @@ public class Matrix {
           }
       }
   }
-
+    // populates matrix with integers
     public void populateMatrix() {
         int count = 1;
         for (int i = 0; i < size; i++) {
@@ -28,7 +29,6 @@ public class Matrix {
         matrix[y1][x1] = matrix[y2][x2];
         matrix[y2][x2] = temp;
     }
-
     public void flipMatrix() {
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size - 1 - i; j++) {

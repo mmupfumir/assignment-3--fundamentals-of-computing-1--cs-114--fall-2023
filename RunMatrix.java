@@ -8,8 +8,9 @@ public class RunMatrix {
     int size = scanner.nextInt();
 
     Matrix matrix = new Matrix(size);
-
+    System.out.println();
     System.out.println("Your matrix is " + size + "x" + size);
+    System.out.println();
     System.out.println("Printing matrix with default values:");
     matrix.resetMatrix();
     matrix.printMatrix();

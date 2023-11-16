@@ -6,6 +6,13 @@ public class Matrix {
         this.size = size;
         this.matrix = new int[size][size];
     }
+    public void resetMatrix() {
+      for (int i = 0; i < size; i++) {
+          for (int j = 0; j < size; j++) {
+              matrix[i][j] = 0;
+          }
+      }
+  }
 
     public void populateMatrix() {
         int count = 1;
@@ -24,7 +31,7 @@ public class Matrix {
 
     public void flipMatrix() {
         for (int i = 0; i < size - 1; i++) {
-            for (int j = 0; j < size 1- i; j++) {
+            for (int j = 0; j < size - 1 - i; j++) {
                 swap(i, j, size - 1 - j, size - 1 - i);
             }
         }
@@ -33,7 +40,7 @@ public class Matrix {
     public void printMatrix() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                if (i == j || (i + j == size - 1 && i != j)) {
+              if ((i + j == size - 1) && (i > j || i < j)) {
                     System.out.print("\u001B[33m" + matrix[i][j] + "\u001B[0m\t");
                 } else {
                     System.out.print(matrix[i][j] + "\t");
